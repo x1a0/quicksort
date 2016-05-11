@@ -1,0 +1,40 @@
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+input, select, option, button {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.items {
+  height: 128px;
+  display: flex;
+  align-items: flex-end;
+}
+.item {
+  flex-grow: 1;
+  padding: 0 2px;
+}
+.item .inner {
+  background-color: #ff9900;
+  height: 100%;
+  width: 100%;
+}
+.item.checking .inner {
+  background-color: red;
+}
+.item.pivot .inner {
+  background-color: blue;
+}
+
+.ops {
+  margin-top: 20px;
+  text-align: center;
+}
+.ops button,
+.ops select {
+  margin: 0 10px;
+  text-transform: uppercase;
+}
